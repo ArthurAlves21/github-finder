@@ -15,18 +15,30 @@ function FormData() {
 
     const repoInfo = (await getRepoInfo(search))
     const mainInfo = (await getMainInfo(search))
-
-    setInfo({
-      ...info, 
-      name:mainInfo.name,
-      date: mainInfo.date,
-      login:search, 
-      stars: repoInfo.stars, 
-      repos:mainInfo.repos, 
-      gists:mainInfo.gists, 
-      followers: mainInfo.followers, 
-      watchers: repoInfo.watchers
-    })   
+    try{
+      setInfo({
+        ...info, 
+        name:mainInfo.name,
+        date: mainInfo.date,
+        login:search, 
+        stars: repoInfo.stars, 
+        repos:mainInfo.repos, 
+        gists:mainInfo.gists, 
+        followers: mainInfo.followers, 
+        watchers: repoInfo.watchers
+      })   
+    }catch(e){
+      setInfo({
+        name: "Nome de Usuário",
+        date: "2011", 
+        login: "nomedeusuario", 
+        stars: 0,
+        repos: 0, 
+        gists: 0, 
+        followers: 0, 
+        watchers: 0 
+       })   
+    }
   }
 
   return(

@@ -7,7 +7,7 @@ import TinyText from '../../Items/Text/TinyText';
 import GetCardContext from '../../../Context/GetCardContext'
 
 function UserData() {
-  const {info, search} = useContext(GetCardContext) 
+  const {info} = useContext(GetCardContext) 
   console.log(info)
   return (
     <>
