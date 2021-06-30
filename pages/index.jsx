@@ -17,6 +17,7 @@ export default function Home() {
    watchers: 0 
   })
 
+
   return (
     <>
     <GetCardContext.Provider value={{info, setInfo, search, setSearch}}>
