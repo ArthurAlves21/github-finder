@@ -8,7 +8,6 @@ import GetCardContext from '../../../Context/GetCardContext'
 
 function UserData() {
   const {info} = useContext(GetCardContext) 
-  console.log(info)
   return (
     <>
     <Container>

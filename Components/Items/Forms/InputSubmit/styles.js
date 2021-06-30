@@ -16,4 +16,5 @@ export const Input = styled.input`
   font-size: 14px;
   font-weight: 500;
   color: #7d7d7d;
+  cursor: pointer;
   `
