@@ -15,7 +15,7 @@ function InputText(props) {
 
   return (
     <Container>
-      <Input placeholder={props.placeholder} onChange={(e) => {handleChange(e.target.value)}}/>
+      <input type="text" placeholder={props.placeholder} onChange={(e) => {handleChange(e.target.value)}}/>
     </Container>
   );
 }

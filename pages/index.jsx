@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import UserDataCard from '../Components/Structures/UserDataCard';
 import GetCardContext from '../Context/GetCardContext';
+import axios from 'axios'
 
 export default function Home() {
   const [search, setSearch] = useState("nomedeusuario")

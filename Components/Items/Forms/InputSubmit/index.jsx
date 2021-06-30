@@ -5,7 +5,7 @@ import { Container, Input } from './styles';
 function InputSubmit(props) {
   return (
     <Container>
-    <Input type="submit" value={props.value}/>
+    <input type="submit" value={props.value}/>
     </Container>
   );
 }

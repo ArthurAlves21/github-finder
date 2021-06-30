@@ -3,7 +3,7 @@ import getDateYear from '../standard/getDateYear';
 
 export default async function getMainInfo(search){
   //Api call to github main endpoint
-  const res = await axios(`https://api.github.com/users/${search}`);
+  const res = await axios(`https://api.github.com/users/felangel`);
   const data = await res.data
 
   const date =  getDateYear(data.created_at)
